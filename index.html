@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .container {
+  display: block;
+  overflow: hidden;
+  position: relative;
+}
+
+.img {
+  float: left;
+  shape-outside: inset(0); /* Ensures the text flows around the img */
+  margin-right: 10px; /* Add some spacing between the img and paragraph */
+}
+
+.paragraph {
+  overflow: hidden; /* Hide any content that would overflow the container */
+  clear: left; /* Clear the float to ensure the paragraph starts at the beginning of the container */
+}
+
+
+  </style>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="tailwind.js"></script>
+  <script src="test.js"></script>
+</head>
+
+<body class="font-roboto">
+  <div class="flex flex-col sm:flex-row">
+    <ul
+      class="inline-flex w-full sm:inline sm:w-[150px] font-bold text-sideBarText divide-y divide-sideBarHoverBg bg-black">
+      <li class="p-4 hover:bg-sideBarHoverBg  text-white">Home</li>
+      <li class="p-4 hover:bg-sideBarHoverBg hover:text-white">
+        Services
+      </li>
+      <li class="p-4 hover:bg-sideBarHoverBg hover:text-white">
+        News
+      </li>
+      <li class="p-4 hover:bg-sideBarHoverBg hover:text-white">
+        Blog
+      </li>
+      <li class="p-4 hover:bg-sideBarHoverBg hover:text-white">
+        Contact
+      </li>
+  
+      <li></li>
+    </ul>
+  
+    <div>
+      <div class="sm:mx-auto sm:w-[calc(100%-150px)] pb-12">
+        <div class="py-8 mx-2">
+          <img class="mx-auto w-[310]" src="banner.jpg" alt="" />
+        </div>
+  
+        <div class="bg-bannerBg px-20 py-12 mb-8 text-center">
+          <div class="pb-4">
+            <b>Lorem ipsum dolor sit asmet?</b>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+            tristique consequat placerat. Vestibulum auctor pellentesque
+            sem, eu posuere erat hendrerit quis. Maecenas vel consequat
+            turpis. Nam facilisis, ligula in mattis sodales, augue justo
+            tristique nulla, sed lacinia ante eros ut mi. Morbi vitae diam
+            augue. Aliquam vel mauris a nibh auctor commodo. Praesent et
+            nisi eu justo eleifend convallis. Quisque suscipit maximus
+            vestibulum. Phasellus congue mollis orci, sit amet luctus
+            augue tristique eu. Donec vulputate odio neque, sed semper
+            turpis pellentesque a.
+          </p>
+        </div>
+  
+        <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1">
+          <div class="mx-8">
+            <h4>
+              <b>Lorem ipsum dolor sit amet</b>
+            </h4>
+            <div class="my-8">
+              <img class="float-left w-[128px] mr-2" src="c1.jpg"  alt="" />
+              <p class="clear-right text-justify">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Sed non dui sodales, faucibus libero ut, posuere felis.
+                Donec imperdiet suscipit accumsan. Aenean consequat
+                condimentum velit ut tempor. Nam porta massa in metus
+                bibendum congue. Pellentesque ultrices liquam egestas nunc
+                at ullamcorper ultricies. Donec feugiat velit nulla, vel
+                sodales est ullamcorper id. Aenean consequat condimentum
+                velit ut tempor. Nam porta massa in metus bibendum congue.
+                Pellentesque ultrices vestibulum mattis.
+              </p>
+            </div>
+          </div>
+          <div class="mx-8">
+            <h4>
+              <b>Lorem ipsum dolor sit amet</b>
+            </h4>
+            <div class="my-8">
+              <img class="float-left w-[128px] mr-2" src="c2.jpg"  alt="" />
+              <p class="clear-right text-justify">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Sed non dui sodales, faucibus libero ut, posuere felis.
+                Donec imperdiet suscipit accumsan. Aenean consequat
+                condimentum velit ut tempor. Nam porta massa in metus
+                bibendum congue. Pellentesque ultrices liquam egestas nunc
+                at ullamcorper ultricies. Donec feugiat velit nulla, vel
+                sodales est ullamcorper id. Aenean consequat condimentum
+                velit ut tempor. Nam porta massa in metus bibendum congue.
+                Pellentesque ultrices vestibulum mattis.
+              </p>
+            </div>
+          </div>
+          <div class="mx-8">
+            <h4>
+              <b>Lorem ipsum dolor sit amet</b>
+            </h4>
+            <div class="my-8">
+              <img class="float-left w-[128px] mr-2" src="c3.jpg"  alt="" />
+              <p class="clear-right text-justify">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Sed non dui sodales, faucibus libero ut, posuere felis.
+                Donec imperdiet suscipit accumsan. Aenean consequat
+                condimentum velit ut tempor. Nam porta massa in metus
+                bibendum congue. Pellentesque ultrices liquam egestas nunc
+                at ullamcorper ultricies. Donec feugiat velit nulla, vel
+                sodales est ullamcorper id. Aenean consequat condimentum
+                velit ut tempor. Nam porta massa in metus bibendum congue.
+                Pellentesque ultrices vestibulum mattis.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <footer class="py-4 mx-[150px]">Copyright © 2021</footer>
+    </div>
+  </div>
+
+</body>
+</html>
